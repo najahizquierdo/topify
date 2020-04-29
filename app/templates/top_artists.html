@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/spotify.css') }}">
+</head>
+<body>
+    <br>
+    {{user}}
+    {% block content %}
+        <br> {{range}} <br>
+        {% for artist in artists_results %}
+        <img src={{art}}>
+        <div style = ><h1>{{artist}} </h1></div></b></p>
+        {% endfor %}
+    {% endblock %}
+    
+
+</body>
+</html>

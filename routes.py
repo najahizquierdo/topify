@@ -1,7 +1,6 @@
 import spotipy
 import sys
 import logging
-import chartify
 import pandas as pd
 import spotipy.util as util
 import random
@@ -10,7 +9,7 @@ from spotipy import oauth2
 import json
 import time
 
-username = '1262801801' ### if you are running this program, please find your URI on the spotify desktop app and paste it in here.
+username = 'sanvu20' ### if you are running this program, please find your URI on the spotify desktop app and paste it in here.
 
 scope = 'user-top-read, user-read-private, playlist-modify-public'
 token = util.prompt_for_user_token(username, scope,
